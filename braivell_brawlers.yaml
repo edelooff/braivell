@@ -1,0 +1,72 @@
+---
+
+name: braivell
+prefix: bb
+
+campaign_settings:
+  book_type: Homebrew
+  game_mode: Pathfinder
+  type: Homebrew.PathfinderHomebrew
+  genre: Fantasy
+  rank: 9
+
+  campaign: Braivell Brawlers
+  setting: Braivell
+
+  pubname_long: AwesomeSpace Pathfinder Excellence
+  pubname_short: AwesomeSpace
+  source_long: Braivell Brawlers Houserules
+  source_short: Braivell rules
+  source_date: 2016-07
+  source_web: https://drive.google.com/open?id=1mT3WVHhPbhQR5ccYLbbo8CwLIOrAF7FBzgz77boampY
+  is_ogl: NO
+  copyright: Braivell
+
+
+campaign_content:
+  feats:
+    lst_type: ABILITY
+    name_prefix: CATEGORY=FEAT|
+    entries:
+      - name: Dodge.MOD
+        properties:
+          - DESC:.CLEAR
+          - DESC:Combined both Dodoge and Mobility; +1 Dodge AC and additional +4 when avoiding AoO due to movement
+          - BENEFIT:.CLEAR
+          - BENEFIT:+1 Dodge AC and additional +4 Dodge AC against attacks of opportunity due to movement
+          - ABILITY:Feat|AUTOMATIC|Mobility|Dodge
+      - name: Deft Maneuvers
+        properties:
+          - TYPE:Combat
+          - DESC:You are particularly skilled at def combat maneuvers.
+          - "BENEFIT:You gain a +2 bonus on checks when performing or defending against the following combat maneuvers, and performing them no longer provokes an Attack of Opportunity: Dirty Trick, Disarm, Reposition, Steal, and Trip."
+      - name: Powerful Maneuvers
+        properties:
+          - TYPE:Combat
+          - DESC:You are particularly adept at powerful combat maneuvers.
+          - "BENEFIT:You gain a +2 bonus on checks when performing or defending against the following combat maneuvers, and performing them no longer provokes an Attack of Opportunity: Bull Rush, Drag, Overrun, and Sunder"
+          - ABILITY:Feat|AUTOMATIC|Improved Drag|Improved Bull Rush|Improved Sunder|Improved Overrun
+          - PRESTAT:1,STR=13
+  items:
+    lst_type: EQUIPMENT
+    entries:
+      - name: Axe Belt
+        properties:
+          - TYPE:GOODS
+          - CONTAINS:UNLIM|ThrownAxe=6
+          - COST:5
+          - WT:1
+      - name: Light Axe, Throwing
+        properties:
+          - KEY:Axe, Light (Throwing)
+          - TYPE:Weapon.Resizable.Ranged.Thrown.Martial.Standard.Slashing.Axe.ThrownAxe
+          - COST:7.50
+          - WT:0.5
+          - DAMAGE:1d4
+          - EQMOD:STEEL
+          - PROFICIENCY:WEAPON|Axe (Throwing)
+          - RANGE:40
+          - SIZE:M
+  skills:
+    lst_type: SKILL
+    entries: []

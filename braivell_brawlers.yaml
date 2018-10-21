@@ -39,12 +39,18 @@ campaign_content:
         properties:
           - TYPE:Combat
           - DESC:You are particularly skilled at def combat maneuvers.
-          - "BENEFIT:You gain a +2 bonus on checks when performing or defending against the following combat maneuvers, and performing them no longer provokes an Attack of Opportunity: Dirty Trick, Disarm, Reposition, Steal, and Trip."
+          - >-
+            BENEFIT:You gain a +2 bonus on checks when performing or defending against
+            the following combat maneuvers, and performing them no longer provokes an
+            Attack of Opportunity: Dirty Trick, Disarm, Reposition, Steal, and Trip.
       - name: Powerful Maneuvers
         properties:
           - TYPE:Combat
           - DESC:You are particularly adept at powerful combat maneuvers.
-          - "BENEFIT:You gain a +2 bonus on checks when performing or defending against the following combat maneuvers, and performing them no longer provokes an Attack of Opportunity: Bull Rush, Drag, Overrun, and Sunder"
+          - >-
+            BENEFIT:You gain a +2 bonus on checks when performing or defending against
+            the following combat maneuvers, and performing them no longer provokes an
+            Attack of Opportunity: Bull Rush, Drag, Overrun, and Sunder
           - ABILITY:Feat|AUTOMATIC|Improved Drag|Improved Bull Rush|Improved Sunder|Improved Overrun
           - PRESTAT:1,STR=13
   items:
